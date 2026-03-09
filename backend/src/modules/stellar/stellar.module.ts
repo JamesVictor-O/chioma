@@ -6,6 +6,8 @@ import { EventEmitterModule } from '@nestjs/event-emitter';
 import { StellarAccount } from './entities/stellar-account.entity';
 import { StellarTransaction } from './entities/stellar-transaction.entity';
 import { StellarEscrow } from './entities/stellar-escrow.entity';
+import { EscrowSignature } from './entities/escrow-signature.entity';
+import { EscrowConditionEntity } from './entities/escrow-condition.entity';
 import { RentObligationNft } from '../agreements/entities/rent-obligation-nft.entity';
 import { AnchorTransaction } from '../transactions/entities/anchor-transaction.entity';
 import { SupportedCurrency } from '../transactions/entities/supported-currency.entity';
@@ -31,6 +33,8 @@ import stellarConfig from './config/stellar.config';
       StellarAccount,
       StellarTransaction,
       StellarEscrow,
+      EscrowSignature,
+      EscrowConditionEntity,
       RentObligationNft,
       AnchorTransaction,
       SupportedCurrency,
